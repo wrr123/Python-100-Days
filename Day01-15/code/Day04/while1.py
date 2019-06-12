@@ -6,9 +6,9 @@ Author: 骆昊
 Date: 2018-03-01
 """
 
-sum = 0
+sum1 = 0
 num = 1
 while num <= 100:
-    sum += num
+    sum1 += num
     num += 1
-print(sum)
+print(sum1)

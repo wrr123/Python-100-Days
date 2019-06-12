@@ -15,7 +15,7 @@ def nose(x,y):
     begin_fill()
     a = 0.4
     for i in range(120):
-        if 0 <= i < 30 or 60 <= i <90:
+        if 0 <= i < 30 or 60 <= i < 90:
             a = a + 0.08
             # 向左转3度
             left(3)

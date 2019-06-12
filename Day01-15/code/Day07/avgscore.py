@@ -10,7 +10,9 @@ Date: 2018-03-06
 def main():
     number = int(input('请输入学生人数: '))
     names = [None] * number
+    print(names)
     scores = [None] * number
+    print(scores)
     for index in range(len(names)):
         names[index] = input('请输入第%d个学生的名字: ' % (index + 1))
         scores[index] = float(input('请输入第%d个学生的成绩: ' % (index + 1)))

@@ -24,6 +24,7 @@ def main():
     print(scores.popitem())
     print(scores.popitem())
     print(scores.pop('骆昊', 100))
+    print(scores)
     scores.clear()
     print(scores)
 

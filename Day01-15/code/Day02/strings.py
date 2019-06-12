@@ -19,3 +19,17 @@ print('字符串是不是一感叹号结尾: ', str1.endswith('!'))
 str2 = '- \u9a86\u660a'
 str3 = str1.title() + ' ' + str2.lower()
 print(str3)
+
+# 查找汉字的unicode表示
+str4 = "王"
+str4ToUnicode = hex(ord(str4)).upper().replace('0X', '\\u')
+print(str4ToUnicode)
+str5 = ''
+for v in '王东':
+    str5 = str5 + hex(ord(v)).upper().replace('0X', '\\u')
+print(str5)
+# 为啥此unicode会打印出unicode字符串，而下面的直接打印出中文字符串？
+str5 = '- ' + str5
+str5 = '- \u738B\u4E1C'
+print(str5)
+print(str1.title() + ' ' + str5.lower())
