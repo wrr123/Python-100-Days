@@ -43,21 +43,22 @@ class Car(object):
         return 'Car: [品牌=%s, 最高时速=%d]' % (self._brand, self._max_speed)
 
 
-car = Car('QQ', 120)
-print(car)
-# ValueError
-# car.max_speed = -100
-car.max_speed = 320
-car.brand = "Benz"
-# 使用__slots__属性限制后下面的代码将产生异常
-# car.current_speed = 80
-print(car)
-# 如果提供了删除器可以执行下面的代码
-# del car.brand
-# 属性的实现
-print(Car.brand)
-print(Car.brand.fget)
-print(Car.brand.fset)
-print(Car.brand.fdel)
-# 通过上面的代码帮助学生理解之前提到的包装器的概念
-# Python中有很多类似的语法糖后面还会出现这样的东西
+if __name__ == '__main__':
+    car = Car('QQ', 120)
+    print(car)
+    # ValueError
+    # car.max_speed = -100
+    car.max_speed = 320
+    car.brand = "Benz"
+    # 使用__slots__属性限制后下面的代码将产生异常
+    # car.current_speed = 80
+    print(car)
+    # 如果提供了删除器可以执行下面的代码
+    # del car.brand
+    # 属性的实现
+    print(Car.brand)
+    print(Car.brand.fget)
+    print(Car.brand.fset)
+    print(Car.brand.fdel)
+    # 通过上面的代码帮助学生理解之前提到的包装器的概念
+    # Python中有很多类似的语法糖后面还会出现这样的东西
