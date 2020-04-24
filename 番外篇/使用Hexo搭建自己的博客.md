@@ -110,7 +110,7 @@ hexo s -p 8000 -o
 
 至此，我们已经可以看到Hexo在没有配置也没有加入自己的Markdown文件下生成的首页，如下图所示。
 
-![](./res/hexo-default-index.png)
+![](../res/hexo-default-index.png)
 
 接下来我们修改博客的配置文件。
 
@@ -285,7 +285,7 @@ hexo server -p 8000 -o
 
 1. 根据自己的用户名创建一个仓库，仓库**一定**要取名为“用户名.github.io”。例如：我在GitHub上的用户名是jackfrued，那么我的托管博客项目的仓库一定要命名为jackfrued.github.io。
 
-   ![](./res/create-new-repo.png)
+   ![](../res/create-new-repo.png)
 
 2. 修改博客项目的配置文件`_config.yml`，配置使用GitHub来部署该博客项目。
 
@@ -329,7 +329,7 @@ hexo server -p 8000 -o
 
 虽然我们已经通过GitHub提供的域名访问到了自己的博客，但是如果我们不愿意“寄人篱下”，我们在利用GitHub Pages提供的托管服务同时，也可以将博客绑定到自己专属的域名。如果暂时还没有购买域名，我们可以在提供域名购买服务的网站（如：[万网](<https://www.hichina.com/>)、[GoDaddy](<https://www.godaddy.com/>)）上进行购买。
 
-![](./res/wanwang.png)
+![](../res/wanwang.png)
 
 > 说明：目前国内对域名的管理日趋严格，在购买域名时需要填写一大堆的个人信息，进行实名认证后才能获得域名，这一点相信大家能够理解。
 
