@@ -63,3 +63,17 @@ class EmployeeFactory():
         elif emp_type == 'S':
             emp = Salesman(*args, **kwargs)
         return emp
+
+
+def main():
+    manager = EmployeeFactory.create('M', 'jack')
+    # 创建一个类,使用任意多个参数和任意多个键值对参数
+    print(manager.name, manager.get_salary())
+    pram = EmployeeFactory.create('P', 'rose', 8)
+    print(pram.name, pram.get_salary())
+    salesman = EmployeeFactory.create('S', 'Wily', 180000)
+    print(salesman.name, salesman.get_salary())
+
+
+if __name__ == '__main__':
+    main()

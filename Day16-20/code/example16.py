@@ -9,21 +9,21 @@
 
 
 class Student():
-    __slots__ = ('stuid', 'name', 'gender')
+    __slots__ = ('stuId', 'name', 'gender')
 
-    def __init__(self, stuid, name):
-        self.stuid = stuid
+    def __init__(self, stu_id, name):
+        self.stuId = stu_id
         self.name = name
 
     def __hash__(self):
-        return hash(self.stuid) + hash(self.name)
+        return hash(self.stuId) + hash(self.name)
 
     def __eq__(self, other):
-        return self.stuid == other.stuid and \
-            self.name == other.name
+        return self.stuId == other.stuid and \
+               self.name == other.name
 
     def __str__(self):
-        return f'{self.stuid}: {self.name}'
+        return f'{self.stuId}: {self.name}'
 
     def __repr__(self):
         return self.__str__()
@@ -52,7 +52,7 @@ def main():
     stu = Student(1234, '骆昊')
     stu.gender = 'Male'
     # stu.birth = '1980-11-28'
-    print(stu.name, stu.birth)
+    print(stu.name, stu.gender)
     school = School('千锋教育')
     school[1001] = Student(1001, '王大锤')
     school[1002] = Student(1002, '白元芳')

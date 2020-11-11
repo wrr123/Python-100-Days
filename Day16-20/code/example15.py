@@ -55,20 +55,20 @@ class FibIter(object):
 
 
 def main():
-    # for val in itertools.permutations('ABCD'):
-    #     print(val)
-    # for val in itertools.combinations('ABCDE', 3):
-    #     print(val)
-    # for val in itertools.product('黑红梅方', range(1, 14)):
-    #     print(val)
-    # fib_iter = FibIter(20)
-    # print('===>', next(fib_iter))
-    # print('===>', next(fib_iter))
-    # for val in fib_iter:
-    #     print(val)
-    prime_iter = PrimeIter(2, 100000)
-    for val in prime_iter:
+    for val in itertools.permutations('ABCD'):
         print(val)
+    for val in itertools.combinations('ABCDE', 3):
+        print(val)
+    for val in itertools.product('黑红梅方', range(1, 14)):
+        print(val)
+    fib_iter = FibIter(20)
+    print('===>', next(fib_iter))
+    print('===>', next(fib_iter))
+    for val in fib_iter:
+        print(val)
+    prime_iter = PrimeIter(2, 100000)
+    # for val in prime_iter:
+        # print(val)
 
 
 if __name__ == '__main__':
