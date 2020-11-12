@@ -7,7 +7,7 @@ real    0m11.512s
 user    0m39.319s
 sys     0m0.169s
 """
-import concurrent.futures
+from concurrent import futures
 import math
 
 PRIMES = [
@@ -41,7 +41,7 @@ def is_prime(n):
 
 def main():
     """主函数"""
-    with concurrent.futures.ProcessPoolExecutor() as executor:
+    with futures.ProcessPoolExecutor() as executor:
         for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
             print('%d is prime: %s' % (number, prime))
 
