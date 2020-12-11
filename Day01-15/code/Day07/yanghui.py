@@ -17,6 +17,7 @@ Date: 2018-03-06
 def main():
     num = int(input('Number of rows: '))
     yh = [[]] * num
+    print(yh)
     for row in range(len(yh)):
         yh[row] = [None] * (row + 1)
         for col in range(len(yh[row])):
@@ -26,6 +27,7 @@ def main():
                 yh[row][col] = yh[row - 1][col] + yh[row - 1][col - 1]
             print(yh[row][col], end='\t')
         print()
+    print(yh)
 
 
 if __name__ == '__main__':

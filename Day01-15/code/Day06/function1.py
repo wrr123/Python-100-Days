@@ -16,3 +16,6 @@ def factorial(n):
 
 
 print(factorial(7) // factorial(3) // factorial(4))
+
+if __name__ == '__main__':
+    print(factorial(7) // factorial(3) // factorial(4))
